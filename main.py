@@ -45,10 +45,18 @@ def eje6():
             print(num)
 
 
+def eje7():
+    num_list = [1, 6, -4, -19, 57, -98]
+    for neg in num_list:
+        if neg < 0:
+            print(neg)
+
+
 if __name__ == '__main__':
     #eje1()
     #eje2()
     #eje3()
     #eje4()
     #print(eje5(8))
-    eje6()
+    #eje6()
+    eje7()
