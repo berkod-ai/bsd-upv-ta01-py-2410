@@ -31,8 +31,17 @@ def eje4():
         print(nombre)
 
 
+def eje5(n):
+    #Fibonacci:
+    fib = [0, 1]
+    while len(fib) < n:
+        fib.append(fib[-1] + fib[-2])
+    return fib
+
+
 if __name__ == '__main__':
     #eje1()
     #eje2()
     #eje3()
-    eje4()
+    #eje4()
+    print(eje5(8))
