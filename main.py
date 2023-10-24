@@ -52,6 +52,15 @@ def eje7():
             print(neg)
 
 
+def eje8():
+    peso = float(input("Peso(en kg): "))
+    estatura = float(input("Estatura(en metros): "))
+
+    imc = peso / (estatura **2)
+
+    print("Tu índice de masa corporal (IMC) es:", imc)
+
+
 if __name__ == '__main__':
     #eje1()
     #eje2()
@@ -59,4 +68,5 @@ if __name__ == '__main__':
     #eje4()
     #print(eje5(8))
     #eje6()
-    eje7()
+    #eje7()
+    eje8()
