@@ -24,8 +24,15 @@ def eje3():
         print(f"Informes del Año {year}")
 
 
-# Press the green button in the gutter to run the script.
+
+def eje4():
+    mi_lista = ["Jose", "Andreu", "Berk", "Cris"]
+    for nombre in mi_lista:
+        print(nombre)
+
+
 if __name__ == '__main__':
     #eje1()
     #eje2()
-    eje3()
+    #eje3()
+    eje4()
