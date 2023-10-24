@@ -18,7 +18,14 @@ def eje2():
     print(precio)
 
 
+def eje3():
+    year = int(input("Que año es?: "))
+    if year <= 2055:
+        print(f"Informes del Año {year}")
+
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     #eje1()
-    eje2()
+    #eje2()
+    eje3()
