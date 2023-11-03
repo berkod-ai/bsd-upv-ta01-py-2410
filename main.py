@@ -78,6 +78,30 @@ def eje9():
     # Mostrar el capital obtenido
     print("El capital obtenido después de", years, "años es:", capital_obtenido)
 
+def eje10():
+    import random
+
+    # Generar un número aleatorio entre 1 y 100 (puedes ajustar el rango según tus preferencias)
+    numero_secreto = random.randint(1, 100)
+
+    intentos = 0
+
+    print("Adivina un numero entre 0-100!")
+
+    while True:
+        intentos += 1
+
+        intento = int(input("Intento #" + str(intentos) + "->" + " Ingeresa un numero(0-100): "))
+
+        if intento == numero_secreto:
+            print("¡Felicidades! Adivinaste el número secreto", numero_secreto, "en", intentos, "intentos.")
+            break
+        elif intento < numero_secreto:
+            print("El número secreto es mayor! Intenta de nuevo!")
+        else:
+            print("El número secreto es menor! Intenta de nuevo!")
+
+
 
 if __name__ == '__main__':
     #eje1()
@@ -88,4 +112,5 @@ if __name__ == '__main__':
     #eje6()
     #eje7()
     #eje8()
-    eje9()
+    #eje9()
+    eje10()
