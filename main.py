@@ -168,6 +168,17 @@ def eje14(): #Ejercicio 15
     menorque(num1, num2)
 
 
+def eje15(): # Ejercicio 16
+    print("Dame 3 numeros! ")
+    num1 = int(input("Numero 1: "))
+    num2 = int(input("Numero 2: "))
+    num3 = int(input("Numero 3: "))
+
+    promedio = (num1 + num2 + num3) / 3
+
+    print(f"Promedio de los 3 numeros: {promedio}")
+
+
 if __name__ == '__main__':
     #eje1()
     #eje2()
@@ -182,4 +193,5 @@ if __name__ == '__main__':
     #eje11()
     #eje12()
     #eje13()
-    eje14()
+    #eje14()
+    eje15()
