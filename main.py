@@ -141,6 +141,18 @@ def eje12(): #Ejercicio 12+1
     print(f"Impares: {impares}")
 
 
+def eje13(): #Ejercicio 14
+
+    a = int(input("Dame un numero que de quieres contar regresiva: "))
+
+    def cuenta_atras(num):
+        while num > 0:
+            num -= 1
+            print(num)
+
+    cuenta_atras(a)
+
+
 if __name__ == '__main__':
     #eje1()
     #eje2()
@@ -153,4 +165,5 @@ if __name__ == '__main__':
     #eje9()
     #eje10()
     #eje11()
-    eje12()
+    #eje12()
+    eje13()
