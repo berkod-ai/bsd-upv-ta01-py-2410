@@ -61,6 +61,24 @@ def eje8():
     print("Tu índice de masa corporal (IMC) es:", imc)
 
 
+def eje9():
+
+    # Solicitar la cantidad a invertir, el interés anual y el número de años
+    cantidad_invertida = float(input("Ingresa la cantidad a invertir: "))
+    tasa_interes_anual = float(input("Ingresa la tasa de interés anual (en porcentaje): "))
+    years = int(input("Ingresa el número de años de la inversión: "))
+
+    # Calcular el capital obtenido
+    tasa_interes_decimal = tasa_interes_anual / 100  # Convertir el interés a decimal
+    capital_obtenido = cantidad_invertida * (1 + tasa_interes_decimal) ** years
+
+    # Redondear el capital obtenido a dos decimales
+    capital_obtenido = round(capital_obtenido, 2)
+
+    # Mostrar el capital obtenido
+    print("El capital obtenido después de", years, "años es:", capital_obtenido)
+
+
 if __name__ == '__main__':
     #eje1()
     #eje2()
@@ -69,4 +87,5 @@ if __name__ == '__main__':
     #print(eje5(8))
     #eje6()
     #eje7()
-    eje8()
+    #eje8()
+    eje9()
