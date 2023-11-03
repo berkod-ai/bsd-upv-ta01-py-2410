@@ -179,6 +179,15 @@ def eje15(): # Ejercicio 16
     print(f"Promedio de los 3 numeros: {promedio}")
 
 
+def eje16(): #Ejercicio 17
+    frase = input("Ingresa una frase!: ")
+    char = input("una letra que quieres reempelazar con '-': ")
+
+    frase_modificada = "".join("-" if c == char else c for c in frase)
+
+    print(f"Frase modificada: {frase_modificada}")
+
+
 if __name__ == '__main__':
     #eje1()
     #eje2()
@@ -194,4 +203,5 @@ if __name__ == '__main__':
     #eje12()
     #eje13()
     #eje14()
-    eje15()
+    #eje15()
+    eje16()
