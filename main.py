@@ -153,6 +153,21 @@ def eje13(): #Ejercicio 14
     cuenta_atras(a)
 
 
+def eje14(): #Ejercicio 15
+    def menorque(a, b):
+        if a == b:
+            print("Son iguales!")
+        elif a < b:
+            print(f"El numero menor es: {a}")
+        else:
+            print(f" El numero menor es: {b}")
+
+    num1 = int(input("Numero 1: "))
+    num2 = int(input("Numero 2: "))
+
+    menorque(num1, num2)
+
+
 if __name__ == '__main__':
     #eje1()
     #eje2()
@@ -166,4 +181,5 @@ if __name__ == '__main__':
     #eje10()
     #eje11()
     #eje12()
-    eje13()
+    #eje13()
+    eje14()
