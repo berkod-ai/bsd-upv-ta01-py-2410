@@ -217,6 +217,49 @@ def eje18(): #Ejercicio 19
     print(resultado)
 
 
+class Pila:  #Eje19 - 20
+    def __init__(self):
+        self.items = []
+
+    def esta_vacia(self):
+        return len(self.items) == 0
+
+    def push(self, elemento):
+        self.items.append(elemento)
+
+    def pop(self):
+        if not self.esta_vacia():
+            return self.items.pop()
+        else:
+            return None
+
+    def ver_tope(self):
+        if not self.esta_vacia():
+            return self.items[-1]
+        else:
+            return None
+
+# Crear una instancia de la Pila
+pila = Pila()
+
+# Agregar elementos a la pila
+pila.push(3)
+pila.push(4)
+pila.push(5)
+pila.push(6)
+pila.push(7)
+
+# Mostrar la pila
+print(pila.items)
+
+# Quitar el elemento superior (pop)
+elemento = pila.pop()
+print("Elemento eliminado:", elemento)
+
+# Mostrar la pila actualizada
+print(pila.items)
+
+
 if __name__ == '__main__':
     #eje1()
     #eje2()
@@ -235,4 +278,5 @@ if __name__ == '__main__':
     #eje15()
     #eje16()
     #eje17()
-    eje18()
+    #eje18()
+    Pila()
