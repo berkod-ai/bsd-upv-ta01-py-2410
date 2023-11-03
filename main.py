@@ -188,6 +188,24 @@ def eje16(): #Ejercicio 17
     print(f"Frase modificada: {frase_modificada}")
 
 
+def eje17(): #Ejercicio 18
+    def sumatorioNumeros(a):
+
+        # Inicializa una variable para llevar la suma de los dígitos
+        total = 0
+
+        # Itera sobre los dígitos y suma cada uno de ellos
+        for d in str(a):
+            total += int(d)
+
+        return total
+
+    numero = int(input("Numero: "))
+    resultado = sumatorioNumeros(numero)
+    print(f"Suma de los digitos {numero}: {resultado}")
+
+
+
 if __name__ == '__main__':
     #eje1()
     #eje2()
@@ -204,4 +222,5 @@ if __name__ == '__main__':
     #eje13()
     #eje14()
     #eje15()
-    eje16()
+    #eje16()
+    eje17()
