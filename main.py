@@ -102,6 +102,17 @@ def eje10():
             print("El número secreto es menor! Intenta de nuevo!")
 
 
+def eje11():
+    def intermedio(a, b):
+        return (a + b) / 2
+
+    a = int(input("Primer numero: "))
+    b = int(input("Segundo numero: "))
+
+    resultado = intermedio(a, b)
+
+    print(f"Intermedio de los numeros {a} y {b} es: {resultado}")
+
 
 if __name__ == '__main__':
     #eje1()
@@ -113,4 +124,5 @@ if __name__ == '__main__':
     #eje7()
     #eje8()
     #eje9()
-    eje10()
+    #eje10()
+    eje11()
