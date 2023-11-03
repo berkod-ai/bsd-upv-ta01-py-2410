@@ -205,6 +205,17 @@ def eje17(): #Ejercicio 18
     print(f"Suma de los digitos {numero}: {resultado}")
 
 
+def eje18(): #Ejercicio 19
+
+    import numpy as np
+
+    A = np.array(([1, 2, 3], [4, 5, 6], [7, 8, 9]))
+    B = np.array(([9, 8, 7], [6, 5, 4], [3, 2, 1]))
+
+    resultado = np.dot(A, B)
+
+    print(resultado)
+
 
 if __name__ == '__main__':
     #eje1()
@@ -223,4 +234,5 @@ if __name__ == '__main__':
     #eje14()
     #eje15()
     #eje16()
-    eje17()
+    #eje17()
+    eje18()
