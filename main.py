@@ -102,7 +102,7 @@ def eje10():
             print("El número secreto es menor! Intenta de nuevo!")
 
 
-def eje11():
+def eje11(): #Ejercicio 12
     def intermedio(a, b):
         return (a + b) / 2
 
@@ -112,6 +112,33 @@ def eje11():
     resultado = intermedio(a, b)
 
     print(f"Intermedio de los numeros {a} y {b} es: {resultado}")
+
+def eje12(): #Ejercicio 12+1
+    def separar(lista):
+        pares = []
+        impares = []
+
+        for num in lista:
+            if num % 2 == 0:
+                pares.append(num)
+            else:
+                impares.append(num)
+
+        return pares, impares
+
+
+    lista = []
+
+    for n in range(5):
+        queda = 5
+        num_lista = int(input(f"Crea una lista de 5! Quedan {queda-n} elementos: "))
+        lista.append(num_lista)
+        print(f"My list:  {lista}")
+        print("-----")
+
+    pares, impares = separar(lista)
+    print(f"Pares: {pares}")
+    print(f"Impares: {impares}")
 
 
 if __name__ == '__main__':
@@ -125,4 +152,5 @@ if __name__ == '__main__':
     #eje8()
     #eje9()
     #eje10()
-    eje11()
+    #eje11()
+    eje12()
